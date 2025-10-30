@@ -3,78 +3,92 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Панель меню Windows 8</title>
+    <title>Design and development process</title>
     <style>
         body {
-            background-color: #2d2d2d;
+            background-color: #e78e18;
             font-family: Arial, sans-serif;
-            display: flex;
+            display: grid;
             justify-content: center;
             align-items: center;
             height: 80vh;
         }
+        .header {
+            background-color: white;
+            text-align:left;
+            padding: 10px 0;
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            z-index: 10;
+        }
+        .header h2 {
+            color: gray;
+            margin: 0;
+        }
+        h1 {
+            color: white;
+            font-family: 'Helvetica Neue', sans-serif;
+            text-align: center;
+        }
         .menu {
             display: grid;
-            grid-template-columns: repeat(8, 1fr);
-            gap: 10px;
-            width: 70%;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+            width: 100%;
         }
         .tile {
-            color: white;
-            padding: 20px;
+            background-color: #ffffff;
+            color: rgb(0, 0, 0);
+            padding: 10px;
             text-align: center;
             transition: background-color 0.3s;
             display: flex;
             flex-direction: column;
-            grid-column: span 2;
+            border-radius: 15px;
         }
-        .small-tile {
-            background-color: #444;
-            padding: 20px;
-            text-align: center;
-            flex: 1;
-            margin: 3px;
-            grid-column: span 1;
+        .tile h1 {
+            color: rgb(241, 204, 80);
         }
-        .tile1 { background-color: #0078d7; }
-        .tile2 { background-color: #d83b01; }
-        .tile3 { background-color: #5a8f00; }
-        .tile4 { background-color: #a80060; }
-        .tile5 { background-color: #9e1b34; }
-        .tile6 { background-color: #3e6f91; }
-        .tile7 { background-color: #ffcc00; }
-        .tile8 { background-color: #4f8eae; }
-        .tile9 { background-color: #0078d7; }
-        .tile10 { background-color: #d83b01; }
-        .tile11 { background-color: #5a8f00; }
-        .tile12 { background-color: #a80060; }
-        .tile13 { background-color: #9e1b34; }
-        .tile14 { background-color: #3e6f91; }
-        .tile15 { background-color: #ffcc00; }
-        .tile16 { background-color: #4f8eae; }
     </style>
 </head>
 <body>
+    <div class="header">
+        <h2>nicepage</h2>
+    </div>
+    <h1 class="u-text u-text-body-alt-color u-text-default u-text-1">Design and Development</h1>
     <div class="menu">
-        <div class="tile tile1">Mail</div>
-        <div class="tile tile2">Calendar</div>
-        <div class="small-tile tile3">Internet Explorer</div>
-        <div class="small-tile tile3">Store</div>
-        <div class="tile tile4">Eirg</div>
-        <div class="tile tile5">People</div>
-        <div class="tile tile6">Photos</div>
-        <div class="small-tile tile7">Maps</div>
-        <div class="small-tile tile7">SkyDrive</div>
-        <div class="tile tile8">Travels</div>
-        <div class="tile tile9">Messaging</div>
-        <div class="tile tile10">Finance</div>
-        <div class="tile tile11">Sports</div>
-        <div class="small-tile tile12">Games</div>
-        <div class="small-tile tile12">Camera</div>
-        <div class="tile tile13">Desktop</div>
-        <div class="tile tile14">Weather</div>
-        <div class="tile tile15">News</div>
-        <div class="small-tile tile12">Miusic</div>
-        <div class="small-tile tile12">Video</div>
+        <div class="tile tile1">
+            <h1>01</h1>
+            <p>Sample text. Click to select the text box. Click again or double click to start editing the text. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+            <u>LEARN MORE</u>
+        </div>
+        <div class="tile tile2">
+            <h1>02</h1>
+            <p>Sample text. Click to select the text box. Click again or double click to start editing the text. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+            <u>LEARN MORE</u>
+        </div>
+        <div class="tile tile3">
+            <h1>03</h1>
+            <p>Sample text. Click to select the text box. Click again or double click to start editing the text. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+            <u>LEARN MORE</u>
+        </div>
+        <div class="tile tile4">
+            <h1>04</h1>
+            <p>Sample text. Click to select the text box. Click again or double click to start editing the text. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+            <u>LEARN MORE</u>
+        </div>
+        <div class="tile tile5">
+            <h1>05</h1>
+            <p>Sample text. Click to select the text box. Click again or double click to start editing the text. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+            <u>LEARN MORE</u>
+        </div>
+        <div class="tile tile6">
+            <h1>06</h1>
+            <p>Sample text. Click to select the text box. Click again or double click to start editing the text. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+            <u>LEARN MORE</u>
+        </div>
     </div>
 </body>
+</html>
