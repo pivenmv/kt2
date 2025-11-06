@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Design and development process</title>
+    <title>Design and Development Process</title>
     <style>
         body {
             background-color: #e78e18;
@@ -11,13 +11,15 @@
             display: grid;
             justify-content: center;
             align-items: center;
-            height: 80vh;
+            height: 100vh;
+            margin: 0; 
+            padding: 0; 
         }
         .header {
             background-color: white;
-            text-align:left;
+            text-align: left;
             padding: 10px 0;
-            position: absolute;
+            position:fixed;
             top: 0;
             left: 0;
             right: 0;
@@ -29,27 +31,58 @@
         }
         h1 {
             color: white;
-            font-family: 'Helvetica Neue', sans-serif;
+            font-family: 'Arial', sans-serif;
             text-align: center;
+            font-size: 2.5em;
+            word-wrap: break-word; 
+            margin: 60px 20px 20px 20px;
         }
         .menu {
             display: grid;
             grid-template-columns: repeat(3, 1fr);
             gap: 20px;
-            width: 100%;
+            width: 90%;
+            max-width: 1200px; 
+            margin: 20px auto;
         }
         .tile {
             background-color: #ffffff;
             color: rgb(0, 0, 0);
-            padding: 10px;
+            padding: 10px; 
             text-align: center;
             transition: background-color 0.3s;
             display: flex;
             flex-direction: column;
-            border-radius: 15px;
+            border-radius: 21px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+            min-width: 0; 
         }
         .tile h1 {
-            color: rgb(241, 204, 80);
+            color: rgb(233, 192, 57);
+            font-size: 3.9em; 
+        }
+        u {
+            cursor: pointer; 
+        }
+        .footer {
+            background-color: rgb(54, 53, 53);
+            height: 73px;
+            width: 100%;
+            position:absolute;
+            bottom: 0;
+            left: 0;
+            z-index: 10;
+        }
+        @media (max-width: 900px) {
+            .menu {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+        
+        @media (max-width: 600px) {
+            .menu {
+                grid-template-columns: 1fr;
+            }
         }
     </style>
 </head>
@@ -57,7 +90,7 @@
     <div class="header">
         <h2>nicepage</h2>
     </div>
-    <h1 class="u-text u-text-body-alt-color u-text-default u-text-1">Design and Development</h1>
+    <h1 class="u-text u-text-body-alt-color u-text-default u-text-1">Design and Development Process</h1>
     <div class="menu">
         <div class="tile tile1">
             <h1>01</h1>
@@ -89,6 +122,9 @@
             <p>Sample text. Click to select the text box. Click again or double click to start editing the text. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
             <u>LEARN MORE</u>
         </div>
+    </div>
+    <div class="footer">
+        <h4>Free HTML5 Template created with Website Builder.</h4>
     </div>
 </body>
 </html>
